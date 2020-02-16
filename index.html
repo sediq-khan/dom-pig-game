@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        
+        <title>Pig Game</title>
+    </head>
+
+    <body>
+        <div class="wrapper clearfix">
+            <!-- Add active to the class player-1-panel in order to have that red dot on it-->
+            <div class="player-0-panel" id="player-0-active">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">0</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">0</div>
+                </div>
+            </div>
+            <!-- Add active to the class player-1-panel in order to have that red dot on it-->
+            <div class="player-1-panel" id="player-1-active">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">0</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+            
+            <button class="btn-new" onclick="newGame()"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="btn-roll" onclick="rollDice()"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="btn-hold" onclick="hold()"><i class="ion-ios-download-outline"></i>Hold</button>
+            
+            <img src="dice-0.png" alt="Dice" class="dice" id="diceImg">
+        </div>
+        
+        <script src="app.js"></script>
+    </body>
+</html>
